@@ -94,12 +94,28 @@ class _Homepage extends State<HomePage>{
               FeatureBox(
                 color: Pallete.firstSuggestionBoxColor,
                 headerText: 'Chat GPT',
-                descriptionText: 'Way for success',
+                descriptionText: 'If you dont change it, it mean you accept it',
+              ),
+              FeatureBox(
+                color: Pallete.secondSuggestionBoxColor,
+                headerText: 'Dall-E',
+                descriptionText: 'Get inspired and stay creative with your personal assiatant powered by dall-e',
+              ),
+              FeatureBox(
+                color: Pallete.thirdSuggestionBoxColor,
+                headerText: 'Small Voice Assistant',
+                descriptionText: 'Get the best of both worlds with a voice assiatant powered by Dall-E and chat GPT',
               ),
             ],
           )
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Pallete.firstSuggestionBoxColor,
+        onPressed: () {},
+        child: const Icon(Icons.mic),
+      ),
+        
     );
   }
 }
